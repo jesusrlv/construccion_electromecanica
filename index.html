@@ -39,6 +39,21 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
 </head>
+<style>
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    /* celular */
+    @media screen and (max-width: 600px) {
+        #logoPortada{
+            width: 100%;
+        }
+    }
+</style>
 
 <body>
 
@@ -132,7 +147,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="img/logo_01.png" width="200" class="logo" alt="Logo">
+                        <img src="img/logo_01.png" width="200"  class="logo" id="logoPortada" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -180,18 +195,21 @@
         <div id="bootcarousel" class="carousel slide text-light heading-uppercase animate_text" data-ride="carousel">
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active bg-cover" style="background-image: url(assets/img/2440x1578.png);">
+                <div class="item active bg-cover" style="background-image: url();">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="img/imagenes/Hero/engineers-checking-the-electrical-box-solar-photo-2023-11-27-05-37-05-utc_720.mp4" type="video/mp4">
+                      </video>
                     <div class="box-table">
                         <div class="box-cell shadow dark">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-4">
                                         <div class="content">
-                                            <h1 data-animation="animated slideInLeft">Build innovative <span>industrial</span> solutions</h1>
+                                            <h1 data-animation="animated slideInLeft">Soluciones Electromecánicas  <span>de Calidad y Eficiencia </span> Garantizada</h1>
                                             <p data-animation="animated slideInUp">
-                                                Stronger unpacked felicity to of mistaken. Fanny at wrong table ye in. Be on easily cannot innate in lasted months on. Differed and and felicity steepest mrs age outweigh.
+                                                CE-JJDD® transforma su visión en realidad con proyectos industriales de excelencia en todo México.
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#">Our Services <i class="fas fa-arrow-right"></i></a>
+                                            <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#sobrenosotros">Sobre nosotros <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -199,18 +217,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="item bg-cover" style="background-image: url(assets/img/2440x1578.png);">
+                <div class="item bg-cover" style="background-image: url(img/imagenes/Hero/electromechanical-technician-install-solar-panels-2023-11-27-05-13-40-utc.jpg);">
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-4">
                                         <div class="content">
-                                            <h1 data-animation="animated slideInDown">Expert knowledge in <span>Technical</span> Solutions</h1>
+                                            <h1 data-animation="animated slideInDown">Construimos el Futuro  <span>con Tecnología y </span> Precisión.</h1>
                                             <p data-animation="animated slideInUp">
-                                                Stronger unpacked felicity to of mistaken. Fanny at wrong table ye in. Be on easily cannot innate in lasted months on. Differed and and felicity steepest mrs age outweigh.
+                                                Redefinimos los estándares industriales con soluciones personalizadas y un compromiso inquebrantable con la calidad.
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#">Our Services <i class="fas fa-arrow-right"></i></a>
+                                            <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#certificaciones">Certificaciones <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -218,18 +236,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="item bg-cover" style="background-image: url(assets/img/2440x1578.png);">
+                <div class="item bg-cover" style="background-image: url();">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="img/imagenes/Hero/silhouette-of-engineer-standing-on-field-with-elec-2023-11-27-05-23-00-utc_720.mp4" type="video/mp4">
+                      </video>
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-4">
                                         <div class="content">
-                                            <h1 data-animation="animated slideInRight">Empowering oil <span>Refiling</span> & Processing plants</h1>
+                                            <h1 data-animation="animated slideInRight">Liderando la Industria  <span>Electromecánica </span> en México</h1>
                                             <p data-animation="animated slideInUp">
-                                                Stronger unpacked felicity to of mistaken. Fanny at wrong table ye in. Be on easily cannot innate in lasted months on. Differed and and felicity steepest mrs age outweigh.
+                                                Soluciones integrales y compromiso con la excelencia en cada proyecto que emprendemos.
                                             </p>
-                                            <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#">Our Services <i class="fas fa-arrow-right"></i></a>
+                                            <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#servicioredeselectricas">Nuestro trabajo <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -243,11 +264,11 @@
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#bootcarousel" data-slide="prev">
                 <i class="fa fa-angle-left"></i>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Anterior</span>
             </a>
             <a class="right carousel-control" href="#bootcarousel" data-slide="next">
                 <i class="fa fa-angle-right"></i>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Siguiente</span>
             </a>
         </div>
     </div>
@@ -263,7 +284,7 @@
                 <div class="about-content">
                     <div class="col-md-6">
                         <div class="thumb">
-                            <img src="assets/img/800x800.png" alt="Thumb">
+                            <img src="img/imagenes/Sobre_nosotros/Mapa.png" alt="Thumb">
                         </div>
                     </div>
                     <div class="col-md-6 info-content">
@@ -658,12 +679,12 @@
         <div class="container-full">
             <div class="row">
                 <div class="content-box">
-                    <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
+                    <div class="col-md-6 thumb bg-cover" style="background-image: url(img/imagenes/Iluminacion_y_control/ceiling-mounted-cassette-type-air-conditioner-in-b-2023-11-27-05-14-42-utc.jpg);"></div>
                     <div class="col-md-6 info">
                         <h4>CE-JJDD</h4>
                         <h2>Iluminación y Control</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptate iusto vitae enim, laboriosam iure blanditiis nisi esse quas nostrum? Debitis placeat molestias commodi necessitatibus in totam vero esse maxime.
+                            Iluyminación y control: En CE-JJDD®, entendemos la importancia de un entorno bien iluminado y controlado para la productividad y seguridad en cualquier instalación industrial.
                         </p>
                         <ul>
                             <li>Ingeniería, Diseño y Construcción de Iluminación Extracción de Aire, Aire Acondicionado</li>
@@ -714,7 +735,7 @@
                     <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumbs overlay">
-                                <img src="assets/img/800x600.png" alt="Thumb">
+                                <img src="img/imagenes/Energias renobables/electricity-station-2023-11-27-05-37-00-utc.jpg" alt="Thumb">
                                 <div class="info">
                                   <h4>Sistemas Híbridos</h4>
                                   <p>
@@ -739,7 +760,7 @@
                     <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumbs overlay">
-                                <img src="assets/img/800x600.png" alt="Thumb">
+                                <img src="img/imagenes/Energias renobables/wind-turbines-closeup-2023-11-27-05-32-26-utc.jpg" alt="Thumb">
                                 <div class="info">
                                   <h4>Sistemas Eólicos</h4>
                                   <p>
@@ -764,7 +785,7 @@
                     <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumbs overlay">
-                                <img src="assets/img/800x600.png" alt="Thumb">
+                                <img src="img/imagenes/Energias renobables/photovoltaic-panel-2023-11-27-05-00-10-utc.jpg" alt="Thumb">
                                 <div class="info">
                                   <h4>Iluminación Fotovoltaica</h4>
                                   <p>
@@ -789,7 +810,7 @@
                     <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumbs overlay">
-                                <img src="assets/img/800x600.png" alt="Thumb">
+                                <img src="img/imagenes/Energias renobables/industrial-interior-of-water-pump-valves-pressur-2024-08-02-18-09-16-utc.jpg" alt="Thumb">
                                 <div class="info">
                                   <h4>Sistemas de Energía Convencional</h4>
                                   <p>
@@ -823,7 +844,7 @@
                         <h4>Energías Renovables y Ahorro Energético</h4>
                         <h2>Ahorro Energético</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt atque officiis vitae natus alias soluta laborum. Incidunt, unde perspiciatis? Ex maiores optio esse neque, excepturi sapiente asperiores explicabo voluptatum minima.
+                            ofrecemos un enfoque integral para integrar tecnologías limpias y optimizar el consumo energético en sus instalaciones.
                         </p>
                     </div>
                 </div>
@@ -834,7 +855,7 @@
                     <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumbs overlay">
-                                <img src="assets/img/800x600.png" alt="Thumb">
+                                <img src="img/imagenes/Ahorro_energetico/a-male-electrician-works-in-a-switchboard-with-an-2023-11-27-05-21-08-utc.jpg" alt="Thumb">
                                 <div class="info">
                                   <h4>Desarrollo de Proyectos para Control de Demanda y Eficiencia Eléctrica</h4>
                                   <p>
@@ -859,7 +880,7 @@
                     <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumbs overlay">
-                                <img src="assets/img/800x600.png" alt="Thumb">
+                                <img src="img/imagenes/Ahorro_energetico/cropped-shot-of-architect-team-discussing-work-pla-2023-11-27-05-00-24-utc.JPG" alt="Thumb">
                                 <div class="info">
                                   <h4>Asesoría sobre Tarifas Eléctricas</h4>
                                   <p>
@@ -884,7 +905,7 @@
                     <div class="col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumbs overlay">
-                                <img src="assets/img/800x600.png" alt="Thumb">
+                                <img src="img/imagenes/Ahorro_energetico/paperwork-and-hands-on-a-board-room-table-at-a-bus-2023-11-27-04-56-27-utc.jpg" alt="Thumb">
                                 <div class="info">
                                   <h4>Ahorro en Sistemas de Aire Comprimido, Motores Eléctricos, Iluminación y Aire Acondicionado</h4>
                                   <p>

@@ -53,11 +53,29 @@
         #logoPortada{
             width: 36%;
         }
+        #imagen1{
+            background-image: url("img/imagenes/Ahorro_energetico/cropped-shot-of-architect-team-discussing-work-pla-2023-11-27-05-00-24-utc.JPG");
+        }
+        #imagen2{
+            background-image: url("img/imagenes/Ahorro_energetico/paperwork-and-hands-on-a-board-room-table-at-a-bus-2023-11-27-04-56-27-utc.jpg")
+        }
+        #myVideo {
+        visibility: hidden;
+        }
     }
     @media screen and (min-width: 600px) and (max-width: 991px) {
     /* Estilos para tablets */
         #logoPortada{
             width:20%;
+        }
+        #imagen1{
+            background-image: url("img/imagenes/Ahorro_energetico/cropped-shot-of-architect-team-discussing-work-pla-2023-11-27-05-00-24-utc.JPG");
+        }
+        #imagen2{
+            background-image: url("img/imagenes/Hero/electromechanical-technician-install-solar-panels-2023-11-27-05-13-40-utc.jpg")
+        }
+        #myVideo {
+        visibility: hidden;
         }
     }
 </style>
@@ -202,7 +220,7 @@
         <div id="bootcarousel" class="carousel slide text-light heading-uppercase animate_text" data-ride="carousel">
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active bg-cover" style="background-image: url();">
+                <div class="item active bg-cover" id="imagen1" >
                     <video autoplay muted loop id="myVideo">
                         <source src="img/imagenes/Hero/engineers-checking-the-electrical-box-solar-photo-2023-11-27-05-37-05-utc_720.mp4" type="video/mp4">
                       </video>
@@ -224,7 +242,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item bg-cover" style="background-image: url(img/imagenes/Hero/electromechanical-technician-install-solar-panels-2023-11-27-05-13-40-utc.jpg);">
+                <div class="item bg-cover" style="background-image: url('img/imagenes/Hero/electromechanical-technician-install-solar-panels-2023-11-27-05-13-40-utc.jpg');">
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
@@ -243,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item bg-cover" style="background-image: url();">
+                <div class="item bg-cover" id="imagen2">
                     <video autoplay muted loop id="myVideo">
                         <source src="img/imagenes/Hero/silhouette-of-engineer-standing-on-field-with-elec-2023-11-27-05-23-00-utc_720.mp4" type="video/mp4">
                       </video>
@@ -548,7 +566,8 @@
                                 <div class="content">
                                     <div class="title">
                                         <a href="#">
-                                            <i class="flaticon-valve"></i>
+                                            <i class="flaticon-gear"></i>
+                                            
                                             <h4>Redes de Baja Tensión Anti Explosión</h4>
                                         </a>
                                     </div>
@@ -567,7 +586,7 @@
                                 <div class="content">
                                     <div class="title">
                                         <a href="#">
-                                            <i class="flaticon-tractor-1"></i>
+                                            <i class="flaticon-concept"></i>
                                             <h4>Bancos de Capacitores</h4>
                                         </a>
                                     </div>
@@ -586,7 +605,7 @@
                                 <div class="content">
                                     <div class="title">
                                         <a href="#">
-                                            <i class="flaticon-mayan-pyramid"></i>
+                                            <i class="flaticon-research"></i>
                                             <h4>Supresores de Picos</h4>
                                         </a>
                                     </div>
@@ -605,7 +624,7 @@
                                 <div class="content">
                                     <div class="title">
                                         <a href="#">
-                                            <i class="flaticon-bridge-2"></i>
+                                            <i class="flaticon-shield"></i>
                                             <h4>Sistemas de Pararrayos</h4>
                                         </a>
                                     </div>
@@ -643,7 +662,7 @@
                                 <div class="content">
                                     <div class="title">
                                         <a href="#">
-                                            <i class="flaticon-solar-panel"></i>
+                                            <i class="flaticon-research-1"></i>
                                             <h4>Mantenimiento de Tableros </h4>
                                         </a>
                                     </div>
@@ -662,7 +681,7 @@
                                 <div class="content">
                                     <div class="title">
                                         <a href="#">
-                                            <i class="flaticon-solar-panel"></i>
+                                            <i class="flaticon-creativity"></i>
                                             <h4>Reactores para Suprimir Armónicas</h4>
                                         </a>
                                     </div>
@@ -756,7 +775,7 @@
                                         <h4><a href="#">Sistemas Híbridos</a></h4>
                                     </div>
                                     <div class="bottom">
-                                        <i class="flaticon-valve"></i>
+                                        <i class="flaticon-concept"></i>
                                     </div>
                                 </div>
                             </div>
@@ -781,7 +800,7 @@
                                         <h4><a href="#">Sistemas Eólicos</a></h4>
                                     </div>
                                     <div class="bottom">
-                                        <i class="flaticon-tractor-1"></i>
+                                        <i class="flaticon-company"></i>
                                     </div>
                                 </div>
                             </div>
@@ -806,7 +825,7 @@
                                         <h4><a href="#">Iluminación Fotovoltaica</a></h4>
                                     </div>
                                     <div class="bottom">
-                                        <i class="flaticon-mayan-pyramid"></i>
+                                        <i class="flaticon-solar-panel"></i>
                                     </div>
                                 </div>
                             </div>
@@ -832,7 +851,7 @@
                                         <h4><a href="#">Sistemas de Energía Convencional</a></h4>
                                     </div>
                                     <div class="bottom">
-                                        <i class="flaticon-bridge-2"></i>
+                                        <i class="flaticon-oil-platform"></i>
                                     </div>
                                 </div>
                             </div>
@@ -876,7 +895,7 @@
                                         <h4><a href="#">Desarrollo de Proyectos para Control de Demanda y Eficiencia Eléctrica</a></h4>
                                     </div>
                                     <div class="bottom">
-                                        <i class="flaticon-valve"></i>
+                                        <i class="flaticon-renewable-energy"></i>
                                     </div>
                                 </div>
                             </div>
@@ -901,7 +920,7 @@
                                         <h4><a href="#">Asesoría sobre Tarifas Eléctricas</a></h4>
                                     </div>
                                     <div class="bottom">
-                                        <i class="flaticon-tractor-1"></i>
+                                        <i class="flaticon-renewable-energy"></i>
                                     </div>
                                 </div>
                             </div>
@@ -926,7 +945,7 @@
                                         <h4><a href="#">Ahorro en Sistemas de Aire Comprimido, Motores Eléctricos, Iluminación y Aire Acondicionado</a></h4>
                                     </div>
                                     <div class="bottom">
-                                        <i class="flaticon-mayan-pyramid"></i>
+                                        <i class="flaticon-renewable-energy"></i>
                                     </div>
                                 </div>
                             </div>
